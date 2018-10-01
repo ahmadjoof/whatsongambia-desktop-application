@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: yellow;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <JFXButton fx:id="btnSubmit" layoutX="93.0" layoutY="265.0" onAction="#submitInformation" prefHeight="58.0" prefWidth="378.0" style="-fx-background-color: white;" text="Submit" />
+      <JFXTextField fx:id="txtImageDescription" layoutX="14.0" layoutY="31.0" prefHeight="26.0" prefWidth="254.0" style="-fx-background-color: grey;" />
+      <JFXTextField fx:id="txtTitle" layoutX="14.0" layoutY="81.0" prefHeight="26.0" prefWidth="254.0" style="-fx-background-color: grey;" />
+      <JFXTextField fx:id="txtDescription" layoutX="14.0" layoutY="140.0" prefHeight="26.0" prefWidth="254.0" style="-fx-background-color: grey;" />
+      <Label fx:id="txtLabel" layoutX="282.0" layoutY="31.0" prefHeight="43.0" prefWidth="304.0" style="-fx-background-color: white;">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <JFXTextField fx:id="txtId" layoutX="14.0" layoutY="187.0" prefHeight="26.0" prefWidth="254.0" style="-fx-background-color: grey;" />
+   </children>
+</AnchorPane>
