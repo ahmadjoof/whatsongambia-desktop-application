@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<HBox prefHeight="747.0" prefWidth="838.0" stylesheets="@../WhatsOnGambia/main.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.NastechIncCoolStuff">
+   <children>
+      <VBox prefHeight="747.0" prefWidth="260.0" styleClass="borderVbox" HBox.hgrow="ALWAYS">
+         <children>
+            <ListView prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+      <VBox prefHeight="747.0" prefWidth="541.0" HBox.hgrow="ALWAYS">
+         <children>
+            <ScrollPane hbarPolicy="NEVER" vbarPolicy="NEVER" VBox.vgrow="ALWAYS">
+               <content>
+                  <VBox>
+                     <children>
+                        <ImageView fitHeight="302.0" fitWidth="558.0" pickOnBounds="true" VBox.vgrow="ALWAYS">
+                           <image>
+                              <Image url="@../images/icons8_Contacts_50px.png" />
+                           </image>
+                        </ImageView>
+                        <Separator prefWidth="200.0" />
+                        <Label prefHeight="18.0" prefWidth="558.0" styleClass="topButton" text="Application Name:" VBox.vgrow="ALWAYS">
+                           <padding>
+                              <Insets bottom="5.0" left="10.0" top="5.0" />
+                           </padding>
+                        </Label>
+                        <Separator prefWidth="200.0" />
+                        <HBox prefHeight="71.0" prefWidth="558.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txtSubTitleNews" text="Description:" wrappingWidth="303.73663902282715" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Label prefHeight="71.0" prefWidth="137.0" styleClass="txtCategoryNewsMain" text="Date Publish:">
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label prefHeight="71.0" prefWidth="177.0" text="00/00/0000" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="51.0" prefWidth="558.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Label prefHeight="51.0" prefWidth="62.0" styleClass="txtCategoryNewsMain" text="Rate:" HBox.hgrow="ALWAYS">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label prefHeight="51.0" prefWidth="307.0" text="0" />
+                              <Label prefHeight="51.0" prefWidth="94.0" styleClass="txtCategoryNewsMain" text="Views:" HBox.hgrow="ALWAYS" />
+                              <Label prefHeight="51.0" prefWidth="156.0" text="0" />
+                           </children>
+                        </HBox>
+                        <Separator prefWidth="200.0" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="infoText" text="Detail description:" wrappingWidth="539.4702816009521" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets bottom="20.0" left="10.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Separator prefWidth="200.0" />
+                        <HBox prefHeight="177.0" prefWidth="558.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <VBox prefHeight="178.0" prefWidth="171.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="24.0" prefWidth="383.0" styleClass="byTxt" text="Share" VBox.vgrow="ALWAYS">
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="24.0" prefWidth="383.0" styleClass="byTxt" text="Rate">
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="24.0" prefWidth="383.0" text="Downloads Available:">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="18.0" prefWidth="557.0" styleClass="byTxt" text="Desktop">
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="18.0" prefWidth="575.0" styleClass="byTxt" text="Android" />
+                                    <Label alignment="CENTER" prefHeight="18.0" prefWidth="490.0" styleClass="byTxt" text="IOS" />
+                                    <Label alignment="CENTER" prefHeight="18.0" prefWidth="653.0" styleClass="byTxt" text="Web" />
+                                    <Label alignment="CENTER" prefHeight="18.0" prefWidth="456.0" styleClass="byTxt" text="Game" />
+                                 </children>
+                              </VBox>
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <VBox prefHeight="178.0" prefWidth="0.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="infoText" text="NasTech Inc is a center for learning and development of advance Technology application and Cyber Securty Solution" wrappingWidth="336.80355072021484" VBox.vgrow="ALWAYS">
+                                       <VBox.margin>
+                                          <Insets bottom="30.0" left="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Text>
+                                    <AnchorPane prefHeight="153.0" prefWidth="364.0">
+                                       <children>
+                                          <Label alignment="CENTER" layoutX="67.0" layoutY="32.0" prefHeight="18.0" prefWidth="196.0" styleClass="nasTechInc" text="NasTech In" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="32.0" />
+                                          <ImageView fitHeight="68.0" fitWidth="375.0" layoutX="90.0" layoutY="69.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                             <image>
+                                                <Image url="@../images/icons8_Batman_Logo_48px.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+</HBox>

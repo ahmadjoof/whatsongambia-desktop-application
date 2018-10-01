@@ -1,0 +1,1152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.CardPane?>
+<?import com.gluonhq.charm.glisten.mvc.View?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<View maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#move" onMousePressed="#pressed" prefHeight="800.0" prefWidth="1500.0" stylesheets="@../WhatsOnGambia/main.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainView2">
+   <top>
+      <HBox alignment="CENTER_RIGHT" prefHeight="52.0" style="-fx-background-color: #ce405a;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="52.0">
+               <children>
+                  <ImageView fx:id="closeBtn" onMouseClicked="#onCloseBtn" styleClass="topButton">
+                     <image>
+                        <Image url="@../images/icons8_Close_Sign_48px_1.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="5.0" right="10.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <JFXButton fx:id="allBtn" buttonType="RAISED" onAction="#allBtnAction" prefHeight="40.0" prefWidth="120.0" styleClass="topButton" text="All">
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor></JFXButton>
+                  <JFXButton fx:id="readBtn" buttonType="RAISED" onAction="#readBtnAction" prefHeight="40.0" prefWidth="120.0" styleClass="topButton" text="Read" />
+                  <JFXButton fx:id="unreadBtn" onAction="#unreadBtnAction" prefHeight="40.0" prefWidth="120.0" styleClass="topButton" text="Unread">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </JFXButton>
+                  <ImageView id="btn" fx:id="refreshBtn" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#refreshBtnAction" styleClass="topButton">
+                     <image>
+                        <Image url="@../images/icons8_Sync_48px_1.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="20.0" right="50.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <JFXTextField fx:id="searchTxtField" onAction="#searchTxtFieldAction" prefHeight="30.0" prefWidth="247.0" promptText="search">
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                     <styleClass>
+                        <String fx:value="searchBtn" />
+                        <String fx:value="mainButtons" />
+                     </styleClass>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </JFXTextField>
+                  <ImageView fx:id="settingsBtn" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#settingsBtnAction" styleClass="topButton">
+                     <image>
+                        <Image url="@../images/icons8_Settings_48px_1.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="52.0" prefWidth="702.0">
+               <children>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <ImageView fx:id="ratingBtn" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#ratingBtnAction" styleClass="topButton">
+                     <image>
+                        <Image url="@../images/icons8_Party_48px_1.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="reportBtn" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#reportBtnAction" styleClass="topButton">
+                     <image>
+                        <Image url="@../images/icons8_Hand_With_Pen_48px_1.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+               <HBox.margin>
+                  <Insets right="23.0" />
+               </HBox.margin>
+            </HBox>
+            <ImageView fx:id="commentBtn" onMouseClicked="#commentBtnAction" styleClass="topButton">
+               <image>
+                  <Image url="@../images/icons8_Comments_48px_1.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="profileBtn" onMouseClicked="#profileBtnAction" styleClass="topButton">
+               <image>
+                  <Image url="@../images/icons8_Male_User_48px_1.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="adminBtn" onMouseClicked="#adminBtnAction" styleClass="topButton">
+               <image>
+                  <Image url="@../images/icons8_Administrator_Male_48px_1.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="50.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView onMouseClicked="#onMini" styleClass="topButton">
+               <image>
+                  <Image url="@../images/icons8_Minimize_Window_48px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefWidth="286.0" style="-fx-background-color: #f96776;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="230.0" prefWidth="286.0" styleClass="listColors">
+               <children>
+                  <ImageView fx:id="wogLogoImage" fitHeight="100.0" fitWidth="100.0" layoutX="87.0" layoutY="42.0">
+                     <image>
+                        <Image url="@../images/icons8_News_48px.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="wogLabelLogo" layoutX="83.0" layoutY="133.0" prefHeight="52.0" prefWidth="109.0" styleClass="wog" text="WOG">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Separator prefWidth="200.0" />
+            <JFXButton fx:id="articlesBtn" minHeight="0.0" onAction="#articlesBtnAction" prefHeight="70.0" prefWidth="286.0" style="-fx-background-color: #f96776;" styleClass="listColors" text="Articles">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0">
+                     <image>
+                        <Image url="@../images/icons8_Magazine_48px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Separator prefWidth="200.0" />
+            <MenuButton fx:id="menuBtnCategory" mnemonicParsing="false" prefHeight="105.0" prefWidth="286.4" style="-fx-background-color: #f96776; -fx-text-fill: white;" text="Category" textFill="WHITE">
+              <items>
+                <MenuItem mnemonicParsing="false" styleClass="mainButtons" text="Latest News">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_New_48px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                <MenuItem mnemonicParsing="false" styleClass="mainButtons" text="Exclusive">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_Private_48px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem mnemonicParsing="false" styleClass="mainButtons" text="Burning Issues">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_Fire_48px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem mnemonicParsing="false" styleClass="mainButtons" text="Legal Affairs">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_Law_48px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem mnemonicParsing="false" styleClass="mainButtons" text="Health">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_Mother's_Health_48px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem mnemonicParsing="false" styleClass="mainButtons" text="Science">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_Science_Fiction_48px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem mnemonicParsing="false" styleClass="mainButtons" text="Technology">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_Technology_Lifestyle_48px_2.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem mnemonicParsing="false" styleClass="mainButtons" text="Education">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_Graduation_Cap_48px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem mnemonicParsing="false" styleClass="mainButtons" text="Politics">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_Elections_48px_2.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem mnemonicParsing="false" styleClass="mainButtons" text="Sports">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_World_Cup_48px_3.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem mnemonicParsing="false" styleClass="mainButtons" text="Artists">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_Tango_48px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem mnemonicParsing="false" styleClass="mainButtons" text="Business">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_Business_48px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem mnemonicParsing="false" styleClass="mainButtons" text="Events">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_Schedule_48px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem mnemonicParsing="false" styleClass="mainButtons" text="Elections">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_Poll_48px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem mnemonicParsing="false" styleClass="mainButtons" text="Music">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_Music_48px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem mnemonicParsing="false" styleClass="mainButtons" text="Arts">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_Attack_48px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem mnemonicParsing="false" styleClass="mainButtons" text="Film">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_Film_Reel_48px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem mnemonicParsing="false" styleClass="mainButtons" text="Climate Change">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_Rain_Cloud_48px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem mnemonicParsing="false" styleClass="mainButtons" text="Food">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_Food_48px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem mnemonicParsing="false" styleClass="mainButtons" text="Social History">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_Historical_48px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem mnemonicParsing="false" styleClass="mainButtons" text="Social Media">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_Micro_48px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem mnemonicParsing="false" styleClass="mainButtons" text="InPictures">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_Google_Images_48px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem mnemonicParsing="false" styleClass="mainButtons" text="LifeStyle">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_Yoga_48px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem mnemonicParsing="false" styleClass="mainButtons" text="Celebrities">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_Recent_Celebrity_48px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem mnemonicParsing="false" styleClass="mainButtons" text="Gossip">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_User_Groups_48px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem mnemonicParsing="false" styleClass="mainButtons" text="WOG">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_News_48px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem mnemonicParsing="false" styleClass="mainButtons" text="Banjul Night Live">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_Night_48px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+              </items>
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../images/icons8_Sorting_48px_3.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="listColors" />
+                  <String fx:value="mainButtons" />
+               </styleClass>
+            </MenuButton>
+            <Separator opacity="0.49" prefWidth="200.0" />
+            <MenuButton fx:id="nasTechIncMenuId" mnemonicParsing="false" onAction="#nasTechIncOnAction" prefHeight="105.0" prefWidth="286.4" style="-fx-background-color: #f96776;" text="NasTech Inc Cool Stuff" textFill="WHITE">
+               <items>
+                  <MenuItem fx:id="desktopMenuId" mnemonicParsing="false" onAction="#desktopAppOnAction" styleClass="mainButtons" text="Desktop Applications">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_Desktop_48px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem fx:id="androidAppMenuId" mnemonicParsing="false" onAction="#androidAppOnAction" styleClass="mainButtons" text="Android Applications">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_Android_OS_48px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem fx:id="iosMenuId" mnemonicParsing="false" onAction="#iosAppOnAction" styleClass="mainButtons" text="IOS Applications">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_iOS_Logo_48px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem fx:id="webAppMenuId" mnemonicParsing="false" onAction="#webAppOnAction" styleClass="mainButtons" text="Web Applications">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_Website_48px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem fx:id="gameAppId" mnemonicParsing="false" onAction="#gameAppOnAction" styleClass="mainButtons" text="Game Applications">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_Game_Controller_48px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem fx:id="cyberSecurityId" mnemonicParsing="false" onAction="#cyberSecurtyOnAction" styleClass="mainButtons" text="Cyber Security">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_Card_Security_48px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+               </items>
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../images/icons8_Video_Conference_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="mainButtons" />
+                  <String fx:value="listColors" />
+               </styleClass>
+            </MenuButton>
+            <Separator opacity="0.5" prefWidth="200.0" />
+            <JFXButton fx:id="videosId" buttonType="RAISED" onAction="#videosOnAction" prefHeight="105.0" prefWidth="286.4" style="-fx-background-color: #f96776;" text="Videos">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../images/icons8_Circled_Play_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="mainButtons" />
+                  <String fx:value="listColors" />
+               </styleClass>
+            </JFXButton>
+            <Separator opacity="0.5" prefWidth="200.0" />
+            <JFXButton fx:id="joinOurTeamBtn" buttonType="RAISED" onAction="#joinOurTeamBtn" prefHeight="105.0" prefWidth="286.4" style="-fx-background-color: #f96776;" text="Join Our Team">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../images/icons8_Team_48px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="menuButton" />
+                  <String fx:value="listColors" />
+               </styleClass>
+            </JFXButton>
+            <Separator prefWidth="200.0" />
+            <VBox alignment="BOTTOM_CENTER" prefHeight="176.0" prefWidth="286.0">
+               <children>
+                  <AnchorPane prefHeight="176.0" prefWidth="286.0">
+                     <children>
+                        <Label layoutX="19.0" layoutY="63.0" prefHeight="18.0" prefWidth="95.0" styleClass="createdBy" text="Created By:" />
+                        <Label layoutX="48.0" layoutY="100.0" prefHeight="54.0" prefWidth="203.0" styleClass="nasTechInc" text="NasTech Inc">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="48.0" fitWidth="139.0" layoutX="72.0" layoutY="130.0">
+                           <image>
+                              <Image url="@../images/icons8_Batman_Logo_48px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <styleClass>
+                        <String fx:value="mainButtons" />
+                        <String fx:value="listColors" />
+                     </styleClass>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children></VBox>
+   </left>
+   <right>
+      <HBox fx:id="anchorRigthPane" prefHeight="747.0" prefWidth="837.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="theMainListviewerId" prefHeight="747.0" prefWidth="284.0" HBox.hgrow="ALWAYS" />
+            <VBox prefHeight="747.0" prefWidth="500.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <ScrollPane hbarPolicy="NEVER" styleClass="corner" vbarPolicy="NEVER" VBox.vgrow="ALWAYS">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="527.2">
+                           <children>
+                              <VBox layoutY="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+                                 <children>
+                                    <ImageView fx:id="mainImagePage" fitHeight="382.0" fitWidth="527.2" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../images/dark-music-wallpaper.jpg" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="OPEN_HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                    <Label prefHeight="18.0" prefWidth="838.0" style="-fx-background-color: grey;" styleClass="topButton" text="NasTech Inc WhatsOnGambia">
+                                       <padding>
+                                          <Insets bottom="5.0" left="20.0" top="5.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label prefHeight="18.0" prefWidth="781.0" styleClass="txtNewsTitle" text="NasTech Inc WhatsOnGambia">
+                                       <VBox.margin>
+                                          <Insets left="20.0" top="20.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <HBox prefHeight="18.0" prefWidth="156.0" VBox.vgrow="ALWAYS">
+                                       <VBox.margin>
+                                          <Insets left="20.0" top="10.0" />
+                                       </VBox.margin>
+                                       <children>
+                                          <Label prefHeight="18.0" prefWidth="86.0" styleClass="txtDateNews" text="10/20/2018" HBox.hgrow="ALWAYS" />
+                                          <Separator orientation="VERTICAL">
+                                             <padding>
+                                                <Insets left="10.0" right="10.0" />
+                                             </padding>
+                                          </Separator>
+                                          <Label styleClass="txtCategoryNewsMain" text="WOG" />
+                                       </children>
+                                    </HBox>
+                                    <Label prefHeight="18.0" prefWidth="797.0" styleClass="txtSubTitleNews" text="NasTech Inc WhatsOnGambia ">
+                                       <VBox.margin>
+                                          <Insets left="20.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Text lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="infoText" text="NasTech Inc WhatsOnGambiaNasTech Inc WhatsOnGambiaNasTech Inc WhatsOnGambiavNasTech Inc WhatsOnGambiav NasTech Inc WhatsOnGambia NasTech Inc WhatsOnGambia" wrappingWidth="487.8496742248535">
+                                       <VBox.margin>
+                                          <Insets left="20.0" top="20.0" />
+                                       </VBox.margin>
+                                    </Text>
+                                    <HBox prefHeight="20.0" prefWidth="403.0" VBox.vgrow="ALWAYS">
+                                       <VBox.margin>
+                                          <Insets left="20.0" top="20.0" />
+                                       </VBox.margin>
+                                       <children>
+                                          <Label text="By:" textFill="#2b077f">
+                                             <font>
+                                                <Font name="System Bold Italic" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label styleClass="byTxt" text="Ahmad Joof" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="600.0" prefWidth="818.0">
+                                       <children>
+                                          <VBox prefWidth="435.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="44.0" prefWidth="431.0" styleClass="txtRelatedStTp" text="Related Stories">
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                   <padding>
+                                                      <Insets bottom="10.0" top="10.0" />
+                                                   </padding>
+                                                   <graphic>
+                                                      <ImageView>
+                                                         <image>
+                                                            <Image url="@../images/icons8_Harry_Potter_48px_1.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Label>
+                                                <CardPane prefHeight="532.0" prefWidth="406.0">
+                                                   <items>
+                                                      <Label style="-fx-padding:10;" text="label1" />
+                                                      <Label style="-fx-padding:10;" text="label2" />
+                                                      <Label style="-fx-padding:10;" text="label3" />
+                                                   </items>
+                                                </CardPane>
+                                                <Separator prefWidth="200.0" />
+                                             </children>
+                                          </VBox>
+                                          <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                          <VBox prefWidth="435.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="44.0" prefWidth="442.0" styleClass="txtRelatedStTp" text="Related Topics">
+                                                   <padding>
+                                                      <Insets bottom="10.0" top="10.0" />
+                                                   </padding>
+                                                   <graphic>
+                                                      <ImageView>
+                                                         <image>
+                                                            <Image url="@../images/icons8_Topic_48px.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Label>
+                                                <Separator prefWidth="200.0" />
+                                                <CardPane prefHeight="530.0" prefWidth="406.0">
+                                                   <items>
+                                                      <Label style="-fx-padding:10;" text="label1" />
+                                                      <Label style="-fx-padding:10;" text="label2" />
+                                                      <Label style="-fx-padding:10;" text="label3" />
+                                                   </items>
+                                                </CardPane>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="20.0" right="20.0" top="20.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <Separator prefWidth="200.0" />
+                                    <Label alignment="CENTER" prefHeight="18.0" prefWidth="826.0" styleClass="byTxt" text="Copyright 2018 WOG">
+                                       <padding>
+                                          <Insets bottom="20.0" top="20.0" />
+                                       </padding>
+                                       <graphic>
+                                          <ImageView fitHeight="40.0" fitWidth="40.0">
+                                             <image>
+                                                <Image url="@../images/icons8_Copyright_48px_1.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </right>
+   <bottom>
+      <VBox style="-fx-background-color: #C41E3A;" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets top="1.0" />
+         </padding>
+      </VBox>
+   </bottom>
+   <center>
+      <VBox fx:id="anchoreCenter" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollPane hbarPolicy="NEVER" prefHeight="747.2" prefWidth="375.0" vbarPolicy="NEVER" VBox.vgrow="ALWAYS">
+               <content>
+                  <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="375.2" styleClass="settings" stylesheets="@../WhatsOnGambia/main.css">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="94.0" prefWidth="210.0" text="WOG NEWS">
+                                       <graphic>
+                                          <ImageView>
+                                             <image>
+                                                <Image url="@../images/icons8_Music_48px_1.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <styleClass>
+                                          <String fx:value="txtCategoryNewsMain" />
+                                          <String fx:value="listColors" />
+                                       </styleClass>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="95.0" prefWidth="251.0" text="TONIGHT EVENTS">
+                                       <graphic>
+                                          <ImageView>
+                                             <image>
+                                                <Image url="@../images/icons8_TV_Show_48px_2.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <styleClass>
+                                          <String fx:value="txtCategoryNewsMain" />
+                                          <String fx:value="listColors" />
+                                       </styleClass>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Separator prefWidth="200.0" />
+                        <Label prefHeight="19.0" prefWidth="375.0" text="Latest News" VBox.vgrow="ALWAYS">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0">
+                                 <image>
+                                    <Image url="@../images/icons8_New_48px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="txtCategoryNewsMain" />
+                              <String fx:value="listColors" />
+                           </styleClass>
+                        </Label>
+                        <Separator prefWidth="200.0" />
+                        <Label prefHeight="50.0" prefWidth="474.0" text="Exclsusive" VBox.vgrow="ALWAYS">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0">
+                                 <image>
+                                    <Image url="@../images/icons8_Private_48px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="txtCategoryNewsMain" />
+                              <String fx:value="listColors" />
+                           </styleClass>
+                        </Label>
+                        <Separator prefWidth="200.0" />
+                        <Label prefHeight="50.0" prefWidth="474.0" text="Burning Issues">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0">
+                                 <image>
+                                    <Image url="@../images/icons8_Fire_48px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="txtCategoryNewsMain" />
+                              <String fx:value="listColors" />
+                           </styleClass>
+                        </Label>
+                        <Separator prefWidth="200.0" />
+                        <Label prefHeight="50.0" prefWidth="474.0" text="Legal Affairs">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0">
+                                 <image>
+                                    <Image url="@../images/icons8_Law_48px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="txtCategoryNewsMain" />
+                              <String fx:value="listColors" />
+                           </styleClass>
+                        </Label>
+                        <Separator prefWidth="200.0" />
+                        <Label prefHeight="50.0" prefWidth="474.0" text="Health">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0">
+                                 <image>
+                                    <Image url="@../images/icons8_Mother's_Health_48px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="txtCategoryNewsMain" />
+                              <String fx:value="listColors" />
+                           </styleClass>
+                        </Label>
+                        <Separator prefWidth="200.0" />
+                        <Label prefHeight="50.0" prefWidth="474.0" text="Science">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0">
+                                 <image>
+                                    <Image url="@../images/icons8_Science_Fiction_48px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="txtCategoryNewsMain" />
+                              <String fx:value="listColors" />
+                           </styleClass>
+                        </Label>
+                        <Separator prefWidth="200.0" />
+                        <Label prefHeight="50.0" prefWidth="474.0" text="Technology">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0">
+                                 <image>
+                                    <Image url="@../images/icons8_Technology_Lifestyle_48px_2.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="txtCategoryNewsMain" />
+                              <String fx:value="listColors" />
+                           </styleClass>
+                        </Label>
+                        <Separator prefWidth="200.0" />
+                        <Label prefHeight="50.0" prefWidth="474.0" text="Education">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0">
+                                 <image>
+                                    <Image url="@../images/icons8_Graduation_Cap_48px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="txtCategoryNewsMain" />
+                              <String fx:value="listColors" />
+                           </styleClass>
+                        </Label>
+                        <Separator prefWidth="200.0" />
+                        <Label prefHeight="50.0" prefWidth="474.0" text="Politics">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0">
+                                 <image>
+                                    <Image url="@../images/icons8_Elections_48px_2.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="txtCategoryNewsMain" />
+                              <String fx:value="listColors" />
+                           </styleClass>
+                        </Label>
+                        <Separator prefWidth="200.0" />
+                        <Label prefHeight="50.0" prefWidth="474.0" text="Sports">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0">
+                                 <image>
+                                    <Image url="@../images/icons8_Yoga_48px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="txtCategoryNewsMain" />
+                              <String fx:value="listColors" />
+                           </styleClass>
+                        </Label>
+                        <Separator prefWidth="200.0" />
+                        <Label prefHeight="50.0" prefWidth="474.0" text="Artist">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0">
+                                 <image>
+                                    <Image url="@../images/icons8_Tango_48px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="txtCategoryNewsMain" />
+                              <String fx:value="listColors" />
+                           </styleClass>
+                        </Label>
+                        <Separator prefWidth="200.0" />
+                        <Label prefHeight="50.0" prefWidth="474.0" text="Business">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0">
+                                 <image>
+                                    <Image url="@../images/icons8_Business_48px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="txtCategoryNewsMain" />
+                              <String fx:value="listColors" />
+                           </styleClass>
+                        </Label>
+                        <Separator prefWidth="200.0" />
+                        <Label prefHeight="50.0" prefWidth="474.0" text="Events">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0">
+                                 <image>
+                                    <Image url="@../images/icons8_Schedule_48px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="txtCategoryNewsMain" />
+                              <String fx:value="listColors" />
+                           </styleClass>
+                        </Label>
+                        <Separator prefWidth="200.0" />
+                        <Label prefHeight="50.0" prefWidth="474.0" text="Election">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0">
+                                 <image>
+                                    <Image url="@../images/icons8_Poll_48px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="txtCategoryNewsMain" />
+                              <String fx:value="listColors" />
+                           </styleClass>
+                        </Label>
+                        <Separator prefWidth="200.0" />
+                        <Label prefHeight="50.0" prefWidth="474.0" text="Music">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0">
+                                 <image>
+                                    <Image url="@../images/icons8_Music_48px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="txtCategoryNewsMain" />
+                              <String fx:value="listColors" />
+                           </styleClass>
+                        </Label>
+                        <Separator prefWidth="200.0" />
+                        <Label prefHeight="50.0" prefWidth="474.0" text="Arts">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0">
+                                 <image>
+                                    <Image url="@../images/icons8_Attack_48px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="txtCategoryNewsMain" />
+                              <String fx:value="listColors" />
+                           </styleClass>
+                        </Label>
+                        <Separator prefWidth="200.0" />
+                        <Label prefHeight="50.0" prefWidth="474.0" text="Film">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0">
+                                 <image>
+                                    <Image url="@../images/icons8_Film_Reel_48px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="txtCategoryNewsMain" />
+                              <String fx:value="listColors" />
+                           </styleClass>
+                        </Label>
+                        <Separator prefWidth="200.0" />
+                        <Label prefHeight="50.0" prefWidth="474.0" text="Climate Change">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0">
+                                 <image>
+                                    <Image url="@../images/icons8_Rain_Cloud_48px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="txtCategoryNewsMain" />
+                              <String fx:value="listColors" />
+                           </styleClass>
+                        </Label>
+                        <Separator prefWidth="200.0" />
+                        <Label prefHeight="50.0" prefWidth="474.0" text="Food">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0">
+                                 <image>
+                                    <Image url="@../images/icons8_Food_48px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="txtCategoryNewsMain" />
+                              <String fx:value="listColors" />
+                           </styleClass>
+                        </Label>
+                        <Separator prefWidth="200.0" />
+                        <Label prefHeight="50.0" prefWidth="474.0" text="Social Media">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0">
+                                 <image>
+                                    <Image url="@../images/icons8_Micro_48px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="txtCategoryNewsMain" />
+                              <String fx:value="listColors" />
+                           </styleClass>
+                        </Label>
+                        <Separator prefWidth="200.0" />
+                        <Label prefHeight="50.0" prefWidth="474.0" text="Life Style">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0">
+                                 <image>
+                                    <Image url="@../images/icons8_Yoga_48px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="txtCategoryNewsMain" />
+                              <String fx:value="listColors" />
+                           </styleClass>
+                        </Label>
+                        <Separator prefWidth="200.0" />
+                        <Label prefHeight="50.0" prefWidth="474.0" text="Celebrities">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0">
+                                 <image>
+                                    <Image url="@../images/icons8_Recent_Celebrity_48px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="txtCategoryNewsMain" />
+                              <String fx:value="listColors" />
+                           </styleClass>
+                        </Label>
+                        <Separator prefWidth="200.0" />
+                        <Label prefHeight="50.0" prefWidth="474.0" text="Gossip">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0">
+                                 <image>
+                                    <Image url="@../images/icons8_User_Groups_48px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="txtCategoryNewsMain" />
+                              <String fx:value="listColors" />
+                           </styleClass>
+                        </Label>
+                        <Separator prefWidth="200.0" />
+                        <Label prefHeight="50.0" prefWidth="474.0" text="WOSG">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0">
+                                 <image>
+                                    <Image url="@../images/icons8_News_48px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="txtCategoryNewsMain" />
+                              <String fx:value="listColors" />
+                           </styleClass>
+                        </Label>
+                        <Separator prefWidth="200.0" />
+                        <Label prefHeight="50.0" prefWidth="474.0" text="Banjul Night Life">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0">
+                                 <image>
+                                    <Image url="@../images/icons8_Night_48px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="txtCategoryNewsMain" />
+                              <String fx:value="listColors" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children></VBox>
+   </center>
+</View>

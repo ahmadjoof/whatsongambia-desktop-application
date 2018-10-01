@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_RIGHT" prefHeight="52.0" prefWidth="600.0" style="-fx-background-color: #C41E3A;">
+         <children>
+            <ImageView nodeOrientation="RIGHT_TO_LEFT">
+               <image>
+                  <Image url="@../images/icons8_Equestrian_Statue_48px_1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="27.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="48.0" fitWidth="70.0">
+               <image>
+                  <Image url="@../images/icons8_Eye_48px_1.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label prefHeight="18.0" prefWidth="290.0" text="Privacy policy">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <ScrollPane prefHeight="600.0" prefWidth="600.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="600.0">
+               <children>
+                  <Text layoutX="20.0" layoutY="20.0" lineSpacing="7.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Technology NasTech Inc WhatsOnGambia  Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambiaTechnology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia Technology NasTech Inc WhatsOnGambia" wrappingWidth="561.9140510559082" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</VBox>

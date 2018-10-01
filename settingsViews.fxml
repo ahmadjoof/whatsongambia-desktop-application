@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="settingsAnchore" onMouseDragged="#move" onMousePressed="#pressed" prefHeight="700.0" prefWidth="500.0" styleClass="settings" stylesheets="@../WhatsOnGambia/main.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SettingsViews">
+   <children>
+      <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="104.0" prefWidth="500.0" style="-fx-background-color: #C41E3A;" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label layoutX="213.0" layoutY="16.0" prefHeight="18.0" prefWidth="70.0" styleClass="AllReadUnread" text="Settings" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </AnchorPane>
+            <ScrollPane hbarPolicy="NEVER" prefHeight="700.0" prefWidth="500.0" vbarPolicy="NEVER" VBox.vgrow="ALWAYS">
+               <content>
+                  <VBox prefHeight="1075.0" prefWidth="500.0">
+                     <children>
+                        <Label prefHeight="40.0" prefWidth="828.0" styleClass="settingsTitles" text="General" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="10.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <AnchorPane prefHeight="40.0" prefWidth="282.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="794.0" layoutY="13.0" AnchorPane.leftAnchor="794.0" AnchorPane.rightAnchor="14.399999999999977">
+                                 <image>
+                                    <Image url="@../images/icons8_Unchecked_Checkbox_48px_3.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="14.0" layoutY="28.0" styleClass="settingsSubTitles" text="Compact layout" />
+                              <Label layoutX="14.0" layoutY="50.0" opacity="0.77" text="See more stories per screen" />
+                           </children>
+                        </AnchorPane>
+                        <Separator prefHeight="40.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                        <AnchorPane prefHeight="40.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Label layoutX="14.0" layoutY="26.0" styleClass="settingsSubTitles" text="Text Size" />
+                              <Label layoutX="15.0" layoutY="43.0" opacity="0.77" prefHeight="14.0" prefWidth="110.0" text="Normal">
+                                 <padding>
+                                    <Insets left="2.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <Separator prefHeight="40.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                        <AnchorPane prefHeight="40.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Label layoutX="14.0" layoutY="6.0" styleClass="settingsSubTitles" text="Accessibility" />
+                              <Text layoutX="13.0" layoutY="39.0" opacity="0.63" strokeType="OUTSIDE" strokeWidth="0.0" text="Select to enjoy enhanced experience for users of assistive technology" wrappingWidth="274.6148681640625" />
+                              <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="794.0" layoutY="9.0" AnchorPane.leftAnchor="794.0" AnchorPane.rightAnchor="14.399999999999977">
+                                 <image>
+                                    <Image url="@../images/icons8_Unchecked_Checkbox_48px_3.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <Separator prefHeight="40.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                        <AnchorPane prefHeight="40.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" prefHeight="14.0" prefWidth="275.0" styleClass="settingsSubTitles" text="All videos to automatically play" />
+                              <Label layoutX="14.0" layoutY="34.0" opacity="0.77" text="Never" />
+                           </children>
+                        </AnchorPane>
+                        <Separator prefHeight="40.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                        <AnchorPane prefHeight="40.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Label layoutX="14.0" layoutY="7.0" prefHeight="14.0" prefWidth="132.0" styleClass="settingsTitles" text="Notifications" />
+                              <Label layoutX="14.0" layoutY="34.0" prefHeight="14.0" prefWidth="260.0" styleClass="settingsSubTitles" text="Notifications settings" />
+                              <Label layoutX="14.0" layoutY="48.0" opacity="0.77" prefHeight="14.0" prefWidth="275.0" text="Customise how you receive WOG News app notifactions">
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <Separator prefHeight="40.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                        <AnchorPane prefHeight="40.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Label layoutX="14.0" layoutY="6.0" prefHeight="14.0" prefWidth="260.0" styleClass="settingsTitles" text="Provacy" />
+                              <Label layoutX="14.0" layoutY="22.0" prefHeight="14.0" prefWidth="224.0" styleClass="settingsSubTitles" text="Share statistics">
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                              </Label>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="794.0" layoutY="30.0" AnchorPane.leftAnchor="794.0" AnchorPane.rightAnchor="14.399999999999977">
+                                 <image>
+                                    <Image url="@../images/icons8_Unchecked_Checkbox_48px_3.png" />
+                                 </image>
+                              </ImageView>
+                              <Text layoutX="14.0" layoutY="59.0" opacity="0.58" strokeType="OUTSIDE" strokeWidth="0.0" text="The WOG will only use this info to analyse and improve the services offered through this app. For more details see our privacy" wrappingWidth="275.1999990707982" />
+                           </children>
+                        </AnchorPane>
+                        <Separator prefHeight="40.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                        <AnchorPane onMouseDragEntered="#move" prefHeight="40.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Label layoutX="14.0" layoutY="5.0" prefHeight="14.0" prefWidth="268.0" styleClass="settingsTitles" text="Widgets" />
+                              <Label layoutX="14.0" layoutY="30.0" prefHeight="14.0" prefWidth="268.0" styleClass="settingsSubTitles" text="Widget update frequency">
+                                 <padding>
+                                    <Insets left="2.0" />
+                                 </padding>
+                              </Label>
+                              <Label layoutX="21.0" layoutY="54.0" opacity="0.76" text="Every hour" />
+                           </children>
+                        </AnchorPane>
+                        <Separator prefHeight="40.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                        <Label prefHeight="40.0" prefWidth="296.0" styleClass="settingsTitles" text="Data" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets left="15.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <AnchorPane prefHeight="40.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" prefHeight="14.0" prefWidth="268.0" styleClass="settingsSubTitles" text="Background syncing " />
+                              <Text layoutX="14.0" layoutY="49.0" opacity="0.55" strokeType="OUTSIDE" strokeWidth="0.0" text="Download articles in the background for faster browsing and a better offline experience" wrappingWidth="267.99999965460665" />
+                              <Label layoutX="14.0" layoutY="83.0" prefHeight="14.0" prefWidth="275.0" styleClass="settingsSubTitles" text="Sync images for offline usage" />
+                              <Text layoutX="17.0" layoutY="118.0" opacity="0.55" strokeType="OUTSIDE" strokeWidth="0.0" text="Turn this on and the app will download thumbnail images for offline usage when doing a background download." wrappingWidth="267.99999965460665" />
+                              <Label layoutX="17.0" layoutY="163.0" prefHeight="14.0" prefWidth="268.0" styleClass="settingsSubTitles" text="Background sync frequency" />
+                              <Label layoutX="17.0" layoutY="189.0" opacity="0.76" prefHeight="14.0" prefWidth="268.0" text="Every hour" />
+                              <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="794.0" layoutY="92.0" AnchorPane.leftAnchor="794.0" AnchorPane.rightAnchor="14.399999999999977">
+                                 <image>
+                                    <Image url="@../images/icons8_Unchecked_Checkbox_48px_3.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="794.0" layoutY="37.0" AnchorPane.leftAnchor="794.0" AnchorPane.rightAnchor="14.399999999999977">
+                                 <image>
+                                    <Image url="@../images/icons8_Unchecked_Checkbox_48px_3.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <Separator prefHeight="40.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                        <AnchorPane prefHeight="40.0" prefWidth="302.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Label layoutX="20.0" layoutY="7.0" prefHeight="14.0" prefWidth="268.0" styleClass="settingsTitles" text="Help" />
+                              <Label layoutX="20.0" layoutY="31.0" prefHeight="14.0" prefWidth="268.0" styleClass="settingsSubTitles" text="Help" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="40.0" prefWidth="302.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Label layoutX="14.0" layoutY="7.0" styleClass="settingsTitles" text="Terms and privacy" />
+                              <Label layoutX="14.0" layoutY="38.0" styleClass="settingsSubTitles" text="Terms of use">
+                                 <padding>
+                                    <Insets left="3.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <Separator prefHeight="40.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                        <AnchorPane prefHeight="40.0" prefWidth="302.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Label layoutX="14.0" layoutY="23.0" styleClass="settingsSubTitles" text="Privacy policy" />
+                           </children>
+                        </AnchorPane>
+                        <Separator prefHeight="40.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                        <AnchorPane prefHeight="40.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Label layoutX="14.0" layoutY="23.0" styleClass="settingsSubTitles" text="Third party Libraries" />
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </AnchorPane>
+                        <Separator prefHeight="40.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                        <AnchorPane prefHeight="40.0" prefWidth="302.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" styleClass="settingsTitles" text="About the app" />
+                              <Label layoutX="14.0" layoutY="40.0" styleClass="settingsSubTitles" text="WOG News and Video Streaming Version" />
+                              <Label layoutX="14.0" layoutY="67.0" prefHeight="14.0" prefWidth="43.0" text="1.01.1" />
+                              <Label layoutX="73.0" layoutY="66.0" text="08/16/2018" />
+                              <Label alignment="CENTER" layoutX="14.0" layoutY="119.0" opacity="0.76" prefHeight="14.0" prefWidth="275.0" styleClass="settingsSubTitles" text="Copyright 2018 WOG">
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="30.0">
+                                       <image>
+                                          <Image url="@../images/icons8_Copyright_48px_3.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

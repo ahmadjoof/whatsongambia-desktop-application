@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox fx:id="vBoxSignUp" prefHeight="712.0" prefWidth="635.0" stylesheets="@../WhatsOnGambia/main.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane VBox.vgrow="ALWAYS">
+         <children>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="556.0" layoutY="265.0" AnchorPane.leftAnchor="557.0" AnchorPane.rightAnchor="58.200000000000045">
+               <image>
+                  <Image url="@../images/icons8_Password_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="557.0" layoutY="143.0" AnchorPane.leftAnchor="557.0" AnchorPane.rightAnchor="58.200000000000045">
+               <image>
+                  <Image url="@../images/icons8_Name_48px_1.png" />
+               </image>
+            </ImageView>
+            <JFXPasswordField layoutX="81.0" layoutY="263.0" promptText="Password" AnchorPane.leftAnchor="81.0" AnchorPane.rightAnchor="81.0" />
+            <JFXTextField layoutX="81.0" layoutY="139.0" prefHeight="26.0" prefWidth="458.0" promptText="Full Name" AnchorPane.leftAnchor="81.0" AnchorPane.rightAnchor="81.0" />
+            <JFXTextField layoutX="81.0" layoutY="201.0" promptText="Email" AnchorPane.leftAnchor="81.0" AnchorPane.rightAnchor="81.0" />
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="558.0" layoutY="204.0" AnchorPane.leftAnchor="557.0" AnchorPane.rightAnchor="58.200000000000045">
+               <image>
+                  <Image url="@../images/icons8_Email_48px.png" />
+               </image>
+            </ImageView>
+            <JFXPasswordField layoutX="81.0" layoutY="326.0" promptText="Confirm Password" AnchorPane.leftAnchor="81.0" AnchorPane.rightAnchor="81.0" />
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="557.0" layoutY="329.0" AnchorPane.leftAnchor="557.0" AnchorPane.rightAnchor="58.200000000000045">
+               <image>
+                  <Image url="@../images/icons8_Password_48px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Separator prefWidth="200.0" />
+      <HBox prefHeight="117.0" prefWidth="634.0">
+         <children>
+            <JFXButton prefHeight="118.0" prefWidth="198.0" style="-fx-background-color: #C41E3A;" text="SIGN UP">
+               <styleClass>
+                  <String fx:value="borderVbox" />
+                  <String fx:value="menuButton" />
+               </styleClass>
+            </JFXButton>
+            <Label alignment="CENTER" prefHeight="118.0" prefWidth="190.0" styleClass="infoText" text="Or Login with" />
+            <AnchorPane HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="58.0" layoutX="95.0" layoutY="35.0">
+                     <image>
+                        <Image url="@../images/icons8_Facebook_48px_2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="58.0" layoutX="163.0" layoutY="34.0">
+                     <image>
+                        <Image url="@../images/icons8_Google_Plus_48px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.67" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: black;" styleClass="createdBy" stylesheets="@../WhatsOnGambia/main.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HoverHighLight">
+   <children>
+      <Label fx:id="loginHightLightId" alignment="CENTER" prefHeight="106.0" prefWidth="150.0" styleClass="createdBy" text="Require Field" VBox.vgrow="ALWAYS" />
+   </children>
+</VBox>

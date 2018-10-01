@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.CardPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1500.0" prefWidth="838.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="10.0" layoutY="10.0" stylesheets="@../WhatsOnGambia/main.css">
+         <children>
+            <ScrollPane>
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0">
+                     <children>
+                        <VBox layoutY="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+                           <children>
+                              <ImageView fitHeight="400.0" fitWidth="838.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/dark-music-wallpaper.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="18.0" prefWidth="838.0" style="-fx-background-color: grey;" styleClass="topButton" text="NasTech Inc WhatsOnGambia">
+                                 <padding>
+                                    <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label prefHeight="18.0" prefWidth="781.0" styleClass="txtNewsTitle" text="NasTech Inc WhatsOnGambia">
+                                 <VBox.margin>
+                                    <Insets left="20.0" right="20.0" top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <AnchorPane>
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="10.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Label prefHeight="18.0" prefWidth="782.0" styleClass="txtDateNews" text="10/20/2018" />
+                                    <Separator layoutX="78.0" layoutY="4.0" orientation="VERTICAL">
+                                       <padding>
+                                          <Insets left="10.0" right="10.0" />
+                                       </padding>
+                                    </Separator>
+                                    <Label layoutX="114.0" styleClass="txtCategoryNewsMain" text="WOG" />
+                                 </children>
+                              </AnchorPane>
+                              <Label prefHeight="18.0" prefWidth="797.0" styleClass="txtSubTitleNews" text="NasTech Inc WhatsOnGambia ">
+                                 <VBox.margin>
+                                    <Insets left="20.0" right="20.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Text lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="topButton" text="NasTech Inc WhatsOnGambiaNasTech Inc WhatsOnGambiaNasTech Inc WhatsOnGambiavNasTech Inc WhatsOnGambiav NasTech Inc WhatsOnGambia NasTech Inc WhatsOnGambia" wrappingWidth="791.8496742248535">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="20.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <AnchorPane prefHeight="18.0" prefWidth="822.0">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="20.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Label text="By:" textFill="#2b077f">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="24.0" styleClass="byTxt" text="Ahmad Joof" />
+                                 </children>
+                              </AnchorPane>
+                              <HBox prefHeight="600.0" prefWidth="818.0">
+                                 <children>
+                                    <VBox prefWidth="435.0">
+                                       <children>
+                                          <Label alignment="CENTER" prefHeight="44.0" prefWidth="431.0" styleClass="txtRelatedStTp" text="Related Stories">
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                             <padding>
+                                                <Insets bottom="10.0" top="10.0" />
+                                             </padding>
+                                             <graphic>
+                                                <ImageView>
+                                                   <image>
+                                                      <Image url="@../images/icons8_Harry_Potter_48px_1.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Label>
+                                          <Separator prefWidth="200.0" />
+                                          <CardPane prefHeight="532.0" prefWidth="406.0">
+                                              <Label style="-fx-padding:10;" text="label1" />
+                                              <Label style="-fx-padding:10;" text="label2" />
+                                              <Label style="-fx-padding:10;" text="label3" />
+                                          </CardPane>
+                                       </children>
+                                    </VBox>
+                                    <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                    <VBox prefWidth="435.0">
+                                       <children>
+                                          <Label alignment="CENTER" prefHeight="44.0" prefWidth="442.0" styleClass="txtRelatedStTp" text="Related Topics">
+                                             <padding>
+                                                <Insets bottom="10.0" top="10.0" />
+                                             </padding>
+                                             <graphic>
+                                                <ImageView>
+                                                   <image>
+                                                      <Image url="@../images/icons8_Topic_48px.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Label>
+                                          <Separator prefWidth="200.0" />
+                                          <CardPane prefHeight="530.0" prefWidth="406.0">
+                                              <Label style="-fx-padding:10;" text="label1" />
+                                              <Label style="-fx-padding:10;" text="label2" />
+                                              <Label style="-fx-padding:10;" text="label3" />
+                                          </CardPane>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets left="20.0" right="20.0" top="20.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <Separator prefWidth="200.0" />
+                              <Label alignment="CENTER" prefHeight="18.0" prefWidth="826.0" styleClass="byTxt" text="Copyright 2018 WOG">
+                                 <padding>
+                                    <Insets bottom="20.0" top="20.0" />
+                                 </padding>
+                                 <graphic>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0">
+                                       <image>
+                                          <Image url="@../images/icons8_Copyright_48px_1.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

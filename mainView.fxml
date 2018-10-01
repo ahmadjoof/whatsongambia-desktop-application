@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.AutoCompleteTextField?>
+<?import com.gluonhq.charm.glisten.control.CardPane?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.mainView">
+    <children>
+        <Pane layoutX="7.0" prefHeight="52.0" prefWidth="1250.0" style="-fx-background-color: #C41E3A;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fx:id="imgCloseBtn" fitHeight="20.0" fitWidth="20.0" layoutX="14.0" layoutY="16.0">
+                    <image>
+                        <Image url="@../images/icons8_Equestrian_Statue_48px_1.png" />
+                    </image>
+                </ImageView>
+                <JFXButton layoutX="59.0" layoutY="7.0" prefHeight="35.0" prefWidth="77.0" style="-fx-background-color: #FFFFF0;" text="All">
+                    <font>
+                        <Font name="Arial" size="12.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton layoutX="215.0" layoutY="7.0" prefHeight="35.0" prefWidth="77.0" style="-fx-background-color: #FFFFF0;" text="Unread">
+                    <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton layoutX="137.0" layoutY="7.0" prefHeight="35.0" prefWidth="77.0" style="-fx-background-color: #FFFFF0;" text="Read" />
+                <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="311.0" layoutY="16.0">
+                    <image>
+                        <Image url="@../images/icons8_Sync_48px_1.png" />
+                    </image>
+                </ImageView>
+                <AutoCompleteTextField layoutX="476.0" layoutY="13.0" prefHeight="26.0" prefWidth="202.0" style="-fx-background-color: #FFFFF0;" />
+                <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="689.0" layoutY="15.0">
+                    <image>
+                        <Image url="@../images/icons8_Settings_48px_1.png" />
+                    </image>
+                </ImageView>
+                <Separator layoutX="715.0" orientation="VERTICAL" prefHeight="52.0" />
+                <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="721.0" layoutY="14.0">
+                    <image>
+                        <Image url="@../images/icons8_Party_48px_1.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="747.0" layoutY="14.0">
+                    <image>
+                        <Image url="@../images/icons8_Hand_With_Pen_48px_1.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="imgMiniBtn" fitHeight="20.0" fitWidth="20.0" layoutX="1196.0" layoutY="13.0">
+                    <image>
+                        <Image url="@../images/icons8_Compress_48px_1.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="imgMaxBtn" fitHeight="20.0" fitWidth="20.0" layoutX="1216.0" layoutY="13.0">
+                    <image>
+                        <Image url="@../images/icons8_Resize_Vertical_48px_1.png" />
+                    </image>
+                </ImageView>
+                <ImageView layoutX="1016.0" layoutY="-1.0">
+                    <image>
+                        <Image url="@../images/icons8_Male_User_48px_1.png" />
+                    </image>
+                </ImageView>
+                <ImageView layoutX="922.0" layoutY="1.0">
+                    <image>
+                        <Image url="@../images/icons8_Comments_48px_1.png" />
+                    </image>
+                </ImageView>
+                <ImageView layoutX="1098.0" layoutY="-1.0">
+                    <image>
+                        <Image url="@../images/icons8_Administrator_Male_48px_1.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <AnchorPane layoutX="8.0" layoutY="53.0" prefHeight="648.0" prefWidth="255.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="50.0">
+            <children>
+                <VBox layoutY="2.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #B22222;" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+                    <children>
+                        <AnchorPane prefHeight="162.0" prefWidth="255.0">
+                            <children>
+                                <ImageView fitHeight="62.0" fitWidth="77.0" layoutX="89.0" layoutY="14.0">
+                                    <image>
+                                        <Image url="@../images/icons8_News_48px.png" />
+                                    </image>
+                                </ImageView>
+                                <Label layoutX="100.0" layoutY="76.0" prefHeight="28.0" prefWidth="77.0" text="WOG" textFill="IVORY">
+                                    <font>
+                                        <Font name="Corbel Bold" size="24.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                        <Separator prefWidth="200.0" />
+                        <Label prefHeight="39.0" prefWidth="255.0" style="-fx-background-color: #DC143C;" text="Articles" textFill="#e2dada">
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0">
+                                    <image>
+                                        <Image url="@../images/icons8_Magazine_48px_1.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font name="Arial" size="14.0" />
+                            </font>
+                        </Label>
+                        <Separator prefWidth="200.0" />
+                        <MenuButton mnemonicParsing="false" prefHeight="93.0" prefWidth="255.0" style="-fx-background-color: #DC143C;" text="Categorys">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Latest News" />
+                                <MenuItem mnemonicParsing="false" text="Exclusive" />
+                                <MenuItem mnemonicParsing="false" text="Burning Issues" />
+                                <MenuItem mnemonicParsing="false" text="Legal Affairs" />
+                                <MenuItem mnemonicParsing="false" text="Health" />
+                                <MenuItem mnemonicParsing="false" text="Science" />
+                                <MenuItem mnemonicParsing="false" text="Technology" />
+                                <MenuItem mnemonicParsing="false" text="Education" />
+                                <MenuItem mnemonicParsing="false" text="Politics" />
+                                <MenuItem mnemonicParsing="false" text="Sports" />
+                                <MenuItem mnemonicParsing="false" text="Artist" />
+                                <MenuItem mnemonicParsing="false" text="Business" />
+                                <MenuItem mnemonicParsing="false" text="Events" />
+                                <MenuItem mnemonicParsing="false" text="Election" />
+                                <MenuItem mnemonicParsing="false" text="Music" />
+                                <MenuItem mnemonicParsing="false" text="Arts" />
+                                <MenuItem mnemonicParsing="false" text="Film" />
+                                <MenuItem mnemonicParsing="false" text="Climate" />
+                                <MenuItem mnemonicParsing="false" text="Food" />
+                                <MenuItem mnemonicParsing="false" text="Social Media" />
+                                <MenuItem mnemonicParsing="false" text="Social History" />
+                                <MenuItem mnemonicParsing="false" text="InPictures" />
+                                <MenuItem mnemonicParsing="false" text="Life Style" />
+                                <MenuItem mnemonicParsing="false" text="Celebrities" />
+                                <MenuItem mnemonicParsing="false" text="Gossip" />
+                                <MenuItem mnemonicParsing="false" text="WOG" />
+                                <MenuItem mnemonicParsing="false" text="Banjul Night Life" />
+                            </items>
+                            <graphic>
+                                <ImageView>
+                                    <image>
+                                        <Image url="@../images/icons8_Sorting_48px_3.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </MenuButton>
+                        <MenuButton mnemonicParsing="false" prefHeight="93.0" prefWidth="255.0" style="-fx-background-color: #DC143C;" text="NasTech Inc Cool Stuff">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Desktop Applications" />
+                                <MenuItem mnemonicParsing="false" text="Android Applications" />
+                                <MenuItem mnemonicParsing="false" text="Web Applications" />
+                                <MenuItem mnemonicParsing="false" text="Cyber Security Solution" />
+                                <MenuItem mnemonicParsing="false" text="Game Applications" />
+                            </items>
+                            <graphic>
+                                <ImageView>
+                                    <image>
+                                        <Image url="@../images/icons8_Video_Conference_48px.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </MenuButton>
+                        <JFXButton prefHeight="93.0" prefWidth="255.0" style="-fx-background-color: #DC143C;" text="Join Our Team">
+                            <graphic>
+                                <ImageView>
+                                    <image>
+                                        <Image url="@../images/icons8_Team_48px_1.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </JFXButton>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <Label layoutX="67.0" layoutY="65.0" prefHeight="62.0" prefWidth="121.0" text="NasTech Inc">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="14.0" layoutY="56.0" prefHeight="18.0" prefWidth="175.0" text="Created by:" textFill="WHITE" />
+                                <ImageView fitHeight="48.0" fitWidth="143.0" layoutX="56.0" layoutY="96.0">
+                                    <image>
+                                        <Image url="@../images/icons8_Batman_Logo_48px.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="255.0" layoutY="52.0" prefHeight="648.0" prefWidth="462.0" AnchorPane.bottomAnchor="0.0">
+            <children>
+                <CardPane layoutY="14.0" prefHeight="648.0" prefWidth="462.0">
+                    <items>
+                        <Pane prefHeight="150.0" prefWidth="446.0">
+                            <children>
+                                <ImageView fitHeight="150.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/icons8_Male_User_48px_1.png" />
+                                    </image>
+                                </ImageView>
+                                <Separator layoutX="147.0" orientation="VERTICAL" prefHeight="150.0" />
+                                <Label layoutX="153.0" layoutY="14.0" prefHeight="18.0" prefWidth="289.0" text="Technology NasTech Hello world">
+                                    <font>
+                                        <Font name="Arial" size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="153.0" layoutY="119.0" prefHeight="21.0" prefWidth="122.0" text="Technology">
+                                    <font>
+                                        <Font name="Arial" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Separator layoutX="281.0" layoutY="115.0" orientation="VERTICAL" prefHeight="30.0" />
+                                <Label layoutX="301.0" layoutY="116.0" prefHeight="18.0" prefWidth="143.0" text="20/20/2018">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="412.0" layoutY="65.0">
+                                    <image>
+                                        <Image url="@../images/icons8_More_48px.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </Pane>
+                    </items>
+                </CardPane>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="718.0" layoutY="75.0" prefHeight="648.0" prefWidth="534.0" AnchorPane.bottomAnchor="0.0">
+            <children>
+                <ScrollPane prefHeight="648.0" prefWidth="534.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                    <content>
+                        <AnchorPane prefHeight="600.0" prefWidth="534.0">
+                            <children>
+                                <Separator layoutX="89.0" layoutY="301.0" prefWidth="534.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                                <VBox layoutX="-6.0" layoutY="301.0" prefHeight="271.0" prefWidth="534.0" AnchorPane.bottomAnchor="-301.0" AnchorPane.leftAnchor="-6.0" AnchorPane.rightAnchor="6.0">
+                                    <children>
+                                        <ImageView fitHeight="303.0" fitWidth="367.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../images/icons8_Video_Conference_48px.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label prefHeight="26.0" prefWidth="534.0" style="-fx-background-color: #808080;" text="I love you mom. I will be home soon">
+                                            <padding>
+                                                <Insets left="5.0" />
+                                            </padding>
+                                        </Label>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="I Love You mom. Help is on the way I Love You mom. Help is on the way" wrappingWidth="519.84983253479">
+                                            <VBox.margin>
+                                                <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                                            </VBox.margin>
+                                            <font>
+                                                <Font size="28.0" />
+                                            </font>
+                                        </Text>
+                                        <AnchorPane prefHeight="76.0" prefWidth="536.0">
+                                            <children>
+                                                <Label prefHeight="30.0" prefWidth="91.0" text="20/20/30">
+                                                    <padding>
+                                                        <Insets left="5.0" />
+                                                    </padding>
+                                                    <font>
+                                                        <Font size="20.0" />
+                                                    </font>
+                                                </Label>
+                                                <Separator layoutX="101.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="30.0" />
+                                                <Label layoutX="118.0" layoutY="1.0" prefHeight="30.0" prefWidth="113.0" text="WOG">
+                                                    <font>
+                                                        <Font size="20.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </AnchorPane>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NasTech Inc Technology" wrappingWidth="524.1163120269775">
+                                            <VBox.margin>
+                                                <Insets left="5.0" top="5.0" />
+                                            </VBox.margin>
+                                            <font>
+                                                <Font size="22.0" />
+                                            </font>
+                                        </Text>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NasTech Inc Technology" wrappingWidth="527.316385269165">
+                                            <VBox.margin>
+                                                <Insets left="5.0" top="15.0" />
+                                            </VBox.margin>
+                                            <font>
+                                                <Font size="19.0" />
+                                            </font>
+                                        </Text>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NasTech Inc Technology NasTech Inc Technology NasTech Inc Technology NasTech Inc Technology NasTech Inc Technology NasTech Inc Technology NasTech Inc Technology NasTech Inc Technology NasTech Inc Technology NasTech Inc Technology NasTech Inc Technology NasTech Inc Technology NasTech Inc Technology NasTech Inc Technology NasTech Inc Technology NasTech Inc Technology NasTech Inc Technology NasTech Inc Technology NasTech Inc Technology NasTech Inc Technology NasTech Inc Technology NasTech Inc Technology" wrappingWidth="530.51633644104">
+                                            <font>
+                                                <Font size="19.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets left="5.0" top="10.0" />
+                                            </VBox.margin>
+                                        </Text>
+                                        <HBox prefHeight="1283.0" prefWidth="534.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+                                            <children>
+                                                <AnchorPane prefHeight="1096.0" prefWidth="534.0">
+                                                    <children>
+                                                        <AnchorPane layoutX="10.0" layoutY="14.0" prefHeight="30.0" prefWidth="518.0" AnchorPane.leftAnchor="0.0">
+                                                            <children>
+                                                                <Label layoutY="7.0" text="By:" AnchorPane.leftAnchor="0.0">
+                                                                    <padding>
+                                                                        <Insets left="5.0" />
+                                                                    </padding>
+                                                                    <font>
+                                                                        <Font name="System Bold" size="13.0" />
+                                                                    </font>
+                                                                </Label>
+                                                                <Label layoutX="33.0" layoutY="8.0" prefHeight="18.0" prefWidth="438.0" text="Ahmad Joof">
+                                                                    <font>
+                                                                        <Font size="13.0" />
+                                                                    </font>
+                                                                </Label>
+                                                            </children>
+                                                        </AnchorPane>
+                                                        <Label layoutX="8.0" layoutY="44.0" prefHeight="18.0" prefWidth="229.0" text="Related Topics">
+                                                            <font>
+                                                                <Font name="System Bold" size="19.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <CardPane layoutX="6.0" layoutY="72.0" prefHeight="323.0" prefWidth="518.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                                            <items>
+                                                                <AnchorPane prefHeight="75.0" prefWidth="517.0">
+                                                                    <children>
+                                                                        <ImageView fitHeight="98.0" fitWidth="180.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                                                            <image>
+                                                                                <Image url="@../images/icons8_Male_User_48px_1.png" />
+                                                                            </image>
+                                                                        </ImageView>
+                                                                        <Separator layoutX="162.0" layoutY="19.0" orientation="VERTICAL" prefHeight="87.0" prefWidth="3.0" />
+                                                                        <Label layoutX="168.0" layoutY="26.0" prefHeight="18.0" prefWidth="346.0" text="NasTech Inc Technology">
+                                                                            <font>
+                                                                                <Font size="16.0" />
+                                                                            </font>
+                                                                        </Label>
+                                                                        <Label layoutX="168.0" layoutY="83.0" prefHeight="18.0" prefWidth="76.0" text="12/12/2018" />
+                                                                        <Label layoutX="258.0" layoutY="84.0" prefHeight="18.0" prefWidth="254.0" text="WOG" />
+                                                                        <Separator layoutX="241.0" layoutY="82.0" orientation="VERTICAL" prefHeight="20.0" />
+                                                                    </children>
+                                                                </AnchorPane>
+                                                            </items>
+                                                        </CardPane>
+                                                        <Label layoutX="14.0" layoutY="412.0" prefHeight="18.0" prefWidth="230.0" text="Related Story" AnchorPane.leftAnchor="0.0">
+                                                            <padding>
+                                                                <Insets left="5.0" />
+                                                            </padding>
+                                                            <font>
+                                                                <Font size="19.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <CardPane layoutX="14.0" layoutY="440.0" prefHeight="331.0" prefWidth="534.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                                            <Label prefHeight="68.0" prefWidth="513.0" style="-fx-background-color: #FFF5EE;" text="Technology">
+                                                                <graphic>
+                                                                    <ImageView>
+                                                                        <image>
+                                                                            <Image url="@../images/icons8_Broken_Link_48px_1.png" />
+                                                                        </image>
+                                                                    </ImageView>
+                                                                </graphic>
+                                                            </Label>
+                                                        </CardPane>
+                                                        <Label layoutX="132.0" layoutY="783.0" prefHeight="31.0" prefWidth="254.0" text="Copyright@2018 WOG">
+                                                            <font>
+                                                                <Font size="21.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <Label layoutX="24.0" layoutY="422.0" prefHeight="18.0" prefWidth="230.0" text="Related Story">
+                                                            <padding>
+                                                                <Insets left="5.0" />
+                                                            </padding>
+                                                            <font>
+                                                                <Font size="19.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <Label layoutX="24.0" layoutY="422.0" prefHeight="18.0" prefWidth="230.0" text="Related Story">
+                                                            <padding>
+                                                                <Insets left="5.0" />
+                                                            </padding>
+                                                            <font>
+                                                                <Font size="19.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <Label layoutX="24.0" layoutY="422.0" prefHeight="18.0" prefWidth="230.0" text="Related Story">
+                                                            <padding>
+                                                                <Insets left="5.0" />
+                                                            </padding>
+                                                            <font>
+                                                                <Font size="19.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <Label layoutX="24.0" layoutY="422.0" prefHeight="18.0" prefWidth="230.0" text="Related Story">
+                                                            <padding>
+                                                                <Insets left="5.0" />
+                                                            </padding>
+                                                            <font>
+                                                                <Font size="19.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <Label layoutX="24.0" layoutY="422.0" prefHeight="18.0" prefWidth="230.0" text="Related Story">
+                                                            <padding>
+                                                                <Insets left="5.0" />
+                                                            </padding>
+                                                            <font>
+                                                                <Font size="19.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <Label layoutX="24.0" layoutY="422.0" prefHeight="18.0" prefWidth="230.0" text="Related Story">
+                                                            <padding>
+                                                                <Insets left="5.0" />
+                                                            </padding>
+                                                            <font>
+                                                                <Font size="19.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <Label layoutX="24.0" layoutY="422.0" prefHeight="18.0" prefWidth="230.0" text="Related Story">
+                                                            <padding>
+                                                                <Insets left="5.0" />
+                                                            </padding>
+                                                            <font>
+                                                                <Font size="19.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </AnchorPane>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </ScrollPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

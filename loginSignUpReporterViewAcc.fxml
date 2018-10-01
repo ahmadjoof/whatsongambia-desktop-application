@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="747.0" prefWidth="688.0" style="-fx-background-color: white;" stylesheets="@../WhatsOnGambia/main.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginSignUpReporterViewAcc">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <children>
+            <HBox layoutX="62.0" layoutY="11.0" prefHeight="83.0" prefWidth="634.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="loginLabel" alignment="CENTER" onMouseClicked="#onClickedLogin" prefHeight="83.0" prefWidth="150.0" styleClass="txtSubTitleNews" text="Login">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_Male_User_48px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <ImageView fitHeight="79.0" fitWidth="30.0">
+                     <image>
+                        <Image url="@../images/icons8_Archers_Arrow_48px_1.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="signUpLabel" alignment="CENTER" onMouseClicked="#onClickSignUp" prefHeight="83.0" prefWidth="165.0" styleClass="txtSubTitleNews" text="Sign Up">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_Administrator_Male_48px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <ImageView fitHeight="81.0" fitWidth="30.0">
+                     <image>
+                        <Image url="@../images/icons8_Archers_Arrow_48px_1.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="beAReporterLabel" alignment="CENTER" onMouseClicked="#onClickBeAReporter" prefHeight="83.0" prefWidth="209.0" styleClass="txtSubTitleNews" text="Be a reporter">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/icons8_Report_Card_48px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </children>
+            </HBox>
+            <Separator layoutX="142.0" layoutY="81.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <VBox fx:id="vBoxLogin" prefHeight="712.0" prefWidth="635.0" VBox.vgrow="ALWAYS" />
+   </children>
+</VBox>

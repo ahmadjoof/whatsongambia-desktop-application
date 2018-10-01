@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="anchorAccountSetUp" prefHeight="746.4" prefWidth="838.4" style="-fx-background-color: #848482;" stylesheets="@../WhatsOnGambia/main.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AccountViewController">
+   <children>
+      <ScrollPane hbarPolicy="NEVER" layoutX="75.0" layoutY="75.0" vbarPolicy="NEVER" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="75.0">
+         <content>
+            <VBox>
+               <children>
+                  <VBox prefWidth="688.0" style="-fx-background-color: #ce405a;" VBox.vgrow="ALWAYS">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <ImageView layoutX="344.0" layoutY="15.0">
+                                 <image>
+                                    <Image url="@../images/icons8_News_48px.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="219.0" layoutY="69.0" prefHeight="26.0" prefWidth="308.0" styleClass="menuButton" text="It's ccool outside... Enter!" />
+                              <Label layoutX="16.0" layoutY="134.0" prefHeight="48.0" prefWidth="380.0" text="Simply access all Gambian News and Entertainment">
+                                 <styleClass>
+                                    <String fx:value="infoText" />
+                                    <String fx:value="colorWhite" />
+                                 </styleClass>
+                                 <graphic>
+                                    <ImageView>
+                                       <image>
+                                          <Image url="@../images/icons8_Circle_48px_2.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                              <Label layoutX="15.0" layoutY="183.0" prefHeight="18.0" prefWidth="246.0" text="Share it to the world">
+                                 <styleClass>
+                                    <String fx:value="infoText" />
+                                    <String fx:value="colorWhite" />
+                                 </styleClass>
+                                 <graphic>
+                                    <ImageView>
+                                       <image>
+                                          <Image url="@../images/icons8_Circle_48px_2.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                              <Label layoutX="15.0" layoutY="159.0" prefHeight="48.0" prefWidth="322.0" text="Access your own account to feed news">
+                                 <graphic>
+                                    <ImageView>
+                                       <image>
+                                          <Image url="@../images/icons8_Circle_48px_2.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="colorWhite" />
+                                    <String fx:value="infoText" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="vBoxMainAccount" prefWidth="688.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox fx:id="vBoxLogin" prefHeight="712.0" prefWidth="635.0" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <HBox alignment="CENTER" layoutX="174.0" layoutY="678.0" prefHeight="36.0" prefWidth="868.0" styleClass="infoText" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="75.0">
+         <children>
+            <Label prefHeight="18.0" prefWidth="85.0" text="Don't have an" />
+            <Label onMouseClicked="#onClickedAccount" prefHeight="18.0" prefWidth="65.0" styleClass="byTxt" text="account" />
+            <ImageView fitHeight="20.0" fitWidth="20.0">
+               <image>
+                  <Image url="@../images/icons8_Archers_Arrow_48px_1.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="14.0" prefWidth="53.0" text="forget" />
+            <Label onMouseClicked="#onClickedForgetPassword" prefHeight="14.0" prefWidth="67.0" styleClass="byTxt" text="password" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

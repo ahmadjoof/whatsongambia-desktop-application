@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="vBoxLogin" prefHeight="500.0" style="-fx-background-color: white;" stylesheets="@../WhatsOnGambia/main.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginAccount">
+   <children>
+      <AnchorPane prefHeight="477.0" prefWidth="636.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="557.0" layoutY="197.0" AnchorPane.leftAnchor="557.0" AnchorPane.rightAnchor="0.0">
+               <image>
+                  <Image url="@../images/icons8_Password_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="557.0" layoutY="78.0" AnchorPane.leftAnchor="557.0" AnchorPane.rightAnchor="59.0">
+               <image>
+                  <Image url="@../images/icons8_Name_48px_1.png" />
+               </image>
+            </ImageView>
+            <JFXPasswordField fx:id="loginPasswordId" layoutX="81.0" layoutY="197.0" onAction="#loginPasswordOnAction" onMousePressed="#passwordMousePressed" promptText="Password" AnchorPane.leftAnchor="81.0" AnchorPane.rightAnchor="81.0" />
+            <JFXTextField fx:id="loginFullNameId" layoutX="81.0" layoutY="73.0" onAction="#loginFullNameOnAction" onMousePressed="#fullNameMousePressed" prefHeight="26.0" prefWidth="458.0" promptText="Full Name" AnchorPane.leftAnchor="81.0" AnchorPane.rightAnchor="81.0" />
+            <JFXTextField fx:id="loginEmailId" layoutX="81.0" layoutY="135.0" onAction="#loginEmailOnAction" onMousePressed="#emailMousePressed" promptText="Email" AnchorPane.leftAnchor="81.0" AnchorPane.rightAnchor="81.0" />
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="557.0" layoutY="137.0" AnchorPane.leftAnchor="557.0" AnchorPane.rightAnchor="59.0">
+               <image>
+                  <Image url="@../images/icons8_Email_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="fullnameErrorId" fitHeight="20.0" fitWidth="20.0" layoutX="35.0" layoutY="79.0" onMouseClicked="#fullNameErrorMouseClicked" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="581.0">
+               <image>
+                  <Image url="@../images/icons8_High_Priority_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="emailErrorId" fitHeight="20.0" fitWidth="20.0" layoutX="35.0" layoutY="141.0" onMouseClicked="#emailErrorMouseClicked" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="581.0">
+               <image>
+                  <Image url="@../images/icons8_High_Priority_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="passwordErrorId" fitHeight="20.0" fitWidth="20.0" layoutX="35.0" layoutY="202.0" onMouseClicked="#passwordErrorMouseClicked" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="581.0">
+               <image>
+                  <Image url="@../images/icons8_High_Priority_48px.png" />
+               </image>
+            </ImageView>
+            <VBox fx:id="loginProblemBackgroundId" layoutX="100.0" layoutY="276.0" prefHeight="94.0" prefWidth="441.0" style="-fx-background-color: #f96776;" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0">
+               <children>
+                  <Text fx:id="loginReasonProblemILabeld" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="createdBy" textAlignment="CENTER" wrappingWidth="435.73670959472656" VBox.vgrow="NEVER">
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Bodoni MT Bold" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <Separator prefWidth="200.0" VBox.vgrow="ALWAYS" />
+      <HBox prefHeight="117.0" VBox.vgrow="ALWAYS">
+         <children>
+            <JFXButton fx:id="loginButtonId" onAction="#loginButtonOnAction" prefHeight="118.0" prefWidth="198.0" style="-fx-background-color: #ce405a;" text="LOGIN">
+               <styleClass>
+                  <String fx:value="borderVbox" />
+                  <String fx:value="menuButton" />
+               </styleClass>
+            </JFXButton>
+            <Label alignment="CENTER" prefHeight="118.0" prefWidth="190.0" styleClass="infoText" text="Or Login with" />
+            <AnchorPane HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView fx:id="loginFacebookId" fitHeight="50.0" fitWidth="58.0" layoutX="95.0" layoutY="8.0" onMouseClicked="#loginFacebookMouseClic">
+                     <image>
+                        <Image url="@../images/icons8_Facebook_48px_2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="loginGoogleId" fitHeight="50.0" fitWidth="58.0" layoutX="163.0" layoutY="8.0" onMouseClicked="#loginGoogleMouseClicked">
+                     <image>
+                        <Image url="@../images/icons8_Google_Plus_48px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</VBox>

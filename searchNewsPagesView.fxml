@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.CardPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="275.0" stylesheets="@../WhatsOnGambia/main.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SearchNewsPagesView">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <CardPane prefHeight="500.0" prefWidth="275.0">
+                <Label style="-fx-padding:10;" text="label1" />
+                <Label style="-fx-padding:10;" text="label2" />
+                <Label style="-fx-padding:10;" text="label3" />
+            </CardPane>
+            <AnchorPane prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: #C41E3A;">
+               <children>
+                  <Label alignment="CENTER" layoutY="-4.0" prefHeight="38.0" prefWidth="275.0" styleClass="AllReadUnread" text="Search result">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../images/icons8_Search_48px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
