@@ -1,1 +1,0 @@
-# whatsongambia-desktop-application
